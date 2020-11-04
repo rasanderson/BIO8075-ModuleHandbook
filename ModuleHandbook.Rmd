@@ -3,7 +3,9 @@ title: BIO8075 Course Handbook Systematic Review and Meta-analysis in Ecology an
   Conservation
 author: "Roy Sanderson"
 date: "03/11/2020"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -116,3 +118,18 @@ Conventional data analysis in the form of linear models and generalised linear m
 ### 3.2.4 Different types of meta-analysis
 Several routes are available for meta-analysis, and we will focus on the [metafor R package](http://www.metafor-project.org/doku.php) which is freely available and has good document. Key concepts to understand include fixed- and random-effects meta-analysis, and meta-regression to handle continuous interventions. Meta-analysis also allows you to detect "publication bias". For example, it is often suspected that studies that demonstrate "statistical significance" as a result of an intervention are more likely to be published than those that do not. This might be because scientists are less likely to submit papers with non-significant results, the so-called "bottom drawer" effect, and/or because of biases in the journal review system, wanting to promote exciting new findings. Failure to publish non-significant results is most likely to occur in small studies, and meta-analysis provides methods to visualise these problems succinctly.
 
+# 4. Visual overview of the course
+The following diagram provides a broad overview of the structure of the BIO8075 course:
+
+![](www/bio8075_overview.png)
+
+The lectures and tutorials, indicated in blue, will be done as "synchronous online" sessions and should be in your timetable. Likewise the practicals, indicated in brown, in which you will be using R/RStudio, will be timetabled Zoom sessions. Note that the above diagram gives a simplified overview of the course, in that there are more than 8 lectures and tutorials, and multiple R practicals. Resources are also being made available online (indicated in green), including interactive web-based apps to help you with the basics of R/RStudio, strengthen your understanding of statistical concepts, and provide advice on how to plan, undertake, and manage the results of literature searches. These will all be posted on Canvas. The documentation for the R/RStudio practicals will be published onto Canvas in advance of the timetabled sessions. You are strongly encouraged to **look through these in advance** to help you get the most out of the timetabled Zoom sessions. When using Zoom, please use the **Desktop Program** not the browser, so that you can share your computer screen properly.
+
+# 5. Recommended reading
+Three texts that are particularly good and comprehensive include:
+
+* Korichiva et al (2013) Handbook of meta-analysis in ecology and evolution. Princeton
+* Borenstein et al (2009) Introduction to meta-analysis. John Wiley
+* Cooper et al (2009) The handbook of research synthesis and meta-analysis. Sage Publications
+
+All three are accessible as electronic books via the Canvas website.

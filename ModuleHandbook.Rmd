@@ -65,6 +65,54 @@ Conservation policy is not made in isolation, and there will be many different i
 We will use the free R/RStudio software for analyses. This part of the course will introduce you to R/RStudio, how to import data, obtain summary statistics, plot simple graphs etc. We will also provide a refresher on basic statistics for those of you who need a reminder, or did not cover, these topics as undergraduates. Interactive online websites will also be available for you to explore some of these concepts, without the need for access to R/Rstudio.
 
 ### 3.2.2 Basic goal-oriented philosphy
-It is possible that as undergraduates you were taught a whole array of different statistical tests, such as t.tests, pairwise t.tests, chi-squared tests, one-way Anova, two-way Anova, analysis of covariance, linear regression, polynomial regression, logistic regression etc. These all fall within the same type of statistical model, namely the **(generalised) linear model**. It is much easier to think in this way. See [this website](https://lindeloev.github.io/tests-as-linear/) for a nice summary of the idea. Indeed, many people take it one stage further, and make it:
+It is possible that as undergraduates you were taught a whole array of different statistical tests, such as t.tests, pairwise t.tests, chi-squared tests, one-way Anova, two-way Anova, analysis of covariance, linear regression, polynomial regression, logistic regression etc. These all fall within the same type of statistical model, namely the **(generalised) linear model**. It is much easier to think in this way. See [this website](https://lindeloev.github.io/tests-as-linear/) for a nice summary of the idea. Broadly, you can think in terms of:
 
-$$\textit{}$$
+$$\textit{Response variable} = \textit{Explanatory variable(s)} + \textit{noise in data}$$
+
+which can be broken down into:
+
+* $\textit{Response variable}$ This is typically equivalent to the 'outcome' in the PICO framework of when you design your question. You might be interested in, for example, whether pollinator biodiversity is greater if neonicotinoid insecticides are prohibited.
+* $\textit{Explanatory variable(s)}$ This, or these, are broadly equivalent to your 'intervention' in the PICO framework. So a first intervention might be banning of neonicotinoids in some areas, compared to allowing their use in others. (A second intervention might be deliberate planting of wildflowers in one area, compared to no change in another.) We refer to this as an 'explanatory' variable, is it is reasonable to assume that pollinators might be affected by insecticides. Note that your explanatory variable can be measured on categorical scales (e.g. presence or absence of insecticides), or continuous scales (e.g. insecticides at different doses)
+* $\textit{noise in data}$ Biological data are inherently noisy, in that even if you repeat the an identical survey or experiment, you will obtain subtely different results. You need to be able to **separate the signal from the noise**. The signal we are interested in is the relationship, if any, between the response and explanatory variable. However, we cannot determine the strength of this relationship unless we also measure the noise.
+
+Your response and explanatory variables can be in lots of different forms:
+
+|Response|Explanatory|Comments|
+|:-------:|:--------:|:-------:|
+|Number of birds present in arable systems| Arable management (conventional/organic)| Response is a whole number count, explanatory categorical with two levels|
+|Incidence of large blue butterfly| Abundance of thyme plants in meadow| Response is binary (presence/absence), explanatory continuous scale|
+|Body length of great crested newts| Aquatic habitat management (none/clear debris/pond-side planting) | Response is on a continuous scale, Explanatory categorical with 3 levels |
+
+This type of linear or generalised linear model is often summarised algebraically as:
+
+$$Y = X + \epsilon$$
+where
+
+* $Y$ is the response variable
+* $X$ is one or more explanatory variables
+* $\epsilon$ is the Greek letter epsilon, representing noise
+
+Indeed, many people take it one stage further, and we can view it from a **goal-oriented** perspective:
+
+$$\textit{goal}(Y\textit{~}X,data=dataset,...)$$
+
+where
+
+* **_goal_** This could be a graph, such as a boxplot, scatterplot, barplot. It could be a simple statistic such as a mean or standard deviation. It could be a linear model or a generalised linear model
+* **_Y ~ X_** This is your response and one or more explanatory variables.
+* **_data = dataset_** You need to provide R with the name of the data that you have imported
+* **...** Sometimes you may want to add options to change plotting, or the actual analysis
+
+You can read a nice summary about the goal-oriented approach with respect to [graphics via ggformula here](https://cran.r-project.org/web/packages/ggformula/vignettes/ggformula-blog.html) and [basic statistics via mosaic here](https://projectmosaic.github.io/mosaic/articles/web-only/LessVolume-MoreCreativity.html).
+
+### 3.2.3 Moving from conventional analysis to meta-analysis
+Conventional data analysis in the form of linear models and generalised linear models etc. is introduced first, as it is important that you have a solid grasp of the basics. In these analyses you are investigating the raw data, you have all the experimental or survey data points, and can thus undertake the analysis in a straightforward manner. In a meta-analysis you do not have access to the raw data. Instead, you have summary information from a number of different papers, and you must "pool" the information from these papers together in a coherent manner before you can undertake the meta-analysis. Critical issues include:
+
+* **Effect-sizes** Often papers will report an intervention as being "statistically significant", i.e. p<0.05, but what is the actual magnitude of that intervention? Policy-makers are often much more interested in how many species will be conserved, at what financial cost, than whether a management intervention is significant or not.
+* **Standardised mean differences** Unfortunately it is unlikely that different papers will report the outcome of the intervention in the same way. They might use different units for example. You need to standardise everything so that it is comparable
+* **Noise** There are several ways of describing variation in data. Standard error, standard deviation and 95% confidence intervals are the most common. In a meta-analysis, all the noise measurements need to be the same, typically standard error. To convert to standard error, you might also need to study the paper to determine sample size.
+* **Data only in graphs** It might be that a paper presents the means and standard errors for various interventions in bar-charts etc., rather than a table. You can sometimes extract this information by scraping it manually or electronically from the figures.
+
+### 3.2.4 Different types of meta-analysis
+Several routes are available for meta-analysis, and we will focus on the [metafor R package](http://www.metafor-project.org/doku.php) which is freely available and has good document. Key concepts to understand include fixed- and random-effects meta-analysis, and meta-regression to handle continuous interventions. Meta-analysis also allows you to detect "publication bias". For example, it is often suspected that studies that demonstrate "statistical significance" as a result of an intervention are more likely to be published than those that do not. This might be because scientists are less likely to submit papers with non-significant results, the so-called "bottom drawer" effect, and/or because of biases in the journal review system, wanting to promote exciting new findings. Failure to publish non-significant results is most likely to occur in small studies, and meta-analysis provides methods to visualise these problems succinctly.
+

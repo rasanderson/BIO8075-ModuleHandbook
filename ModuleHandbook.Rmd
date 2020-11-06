@@ -4,8 +4,8 @@ title: BIO8075 Course Handbook Systematic Review and Meta-analysis in Ecology an
 author: "Roy Sanderson"
 date: "03/11/2020"
 output:
-  word_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -30,7 +30,7 @@ Whilst the benefits of systematic reviews and meta-analysis have been well-estab
 * Availability of substantial texts, and peer-reviewed papers, on the theory and practice of systematic review and meta-analysis, written from the perspective of environmental scientists
 * More rigorous requirements by many scientific journals on reporting standards. These vary from making available any code used in the analyses, to free access to the complete datasets used, so that other scientists can repeat the analyses and check the **reproducibility** of the findings.
 * High quality open-source (free) systems to manage bibliographic databases. Thus, in addition to commercial software such as [EndNote](endnote.com), public-domain software such as [Zotero](zotero.org) whilst more limited in functionality, can now serve as a suitable alternative
-* The free software [R](www.r-project.org) has been in existance for about 25 years, but within the last five years has been improved with some excellent free add-on "packages", in particular the [metafor](http://www.metafor-project.org/doku.php) which is as powerful, if not more powerful, than many of its commercial rivals.
+* The free software [R](www.r-project.org) has been in existance for about 25 years, but within the last five years has been improved with some excellent free add-on "packages", in particular the [metafor R package](http://www.metafor-project.org/doku.php) which is as powerful, if not more powerful, than many of its commercial rivals.
 
 # 3. Outline of this course
 BIO8075 is split into two main parts, first on systematic reviews, and second statistical modelling / meta-analysis. No prior experience of either is assumed. Whilst most students have done **narrative reviews** as part of their undergraduate degrees, the distinct differences from formal systematic reviews, and the requirements of the latter, and rarely covered. Similarly, most students from a science background (less so from humanities) will have covered basics of statistical analysis as undergraduates. However, experience has shown us that whilst some students may have heard of terms such as 'variance', 'standard error', 'p-values' etc., their actual understanding of these concepts is often tenuous. We therefore provide a refresher on basic statistics, before moving on to meta-analysis.
@@ -73,9 +73,9 @@ $$\textit{Response variable} = \textit{Explanatory variable(s)} + \textit{noise 
 
 which can be broken down into:
 
-* $\textit{Response variable}$ This is typically equivalent to the 'outcome' in the PICO framework of when you design your question. You might be interested in, for example, whether pollinator biodiversity is greater if neonicotinoid insecticides are prohibited.
-* $\textit{Explanatory variable(s)}$ This, or these, are broadly equivalent to your 'intervention' in the PICO framework. So a first intervention might be banning of neonicotinoids in some areas, compared to allowing their use in others. (A second intervention might be deliberate planting of wildflowers in one area, compared to no change in another.) We refer to this as an 'explanatory' variable, is it is reasonable to assume that pollinators might be affected by insecticides. Note that your explanatory variable can be measured on categorical scales (e.g. presence or absence of insecticides), or continuous scales (e.g. insecticides at different doses)
-* $\textit{noise in data}$ Biological data are inherently noisy, in that even if you repeat the an identical survey or experiment, you will obtain subtely different results. You need to be able to **separate the signal from the noise**. The signal we are interested in is the relationship, if any, between the response and explanatory variable. However, we cannot determine the strength of this relationship unless we also measure the noise.
+* **_Response variable_** This is typically equivalent to the 'outcome' in the PICO framework of when you design your question. You might be interested in, for example, whether pollinator biodiversity is greater if neonicotinoid insecticides are prohibited.
+* **_Explanatory variable(s)_** This, or these, are broadly equivalent to your 'intervention' in the PICO framework. So a first intervention might be banning of neonicotinoids in some areas, compared to allowing their use in others. (A second intervention might be deliberate planting of wildflowers in one area, compared to no change in another.) We refer to this as an 'explanatory' variable, as it is reasonable to assume that pollinators might be affected by insecticides. Note that your explanatory variable can be measured on categorical scales (e.g. presence or absence of insecticides), or continuous scales (e.g. insecticides at different doses)
+* **_noise in data_** Biological data are inherently noisy, in that even if you repeat the an identical survey or experiment, you will obtain subtely different results. You need to be able to **separate the signal from the noise**. The signal we are interested in is the relationship, if any, between the response and explanatory variable. However, we cannot determine the strength of this relationship unless we also measure the noise.
 
 Your response and explanatory variables can be in lots of different forms:
 

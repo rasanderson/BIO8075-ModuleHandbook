@@ -2,7 +2,7 @@
 title: BIO8075 Course Handbook Systematic Review and Meta-analysis in Ecology and
   Conservation
 author: "Roy Sanderson"
-date: "03/11/2020"
+date: "09/11/2020"
 output:
   html_document: default
   word_document: default
@@ -54,7 +54,7 @@ Using the PICO approach helps you in the critical phase of defining your researc
 You may be familiar with literature searches using Google Scholar or similar, using a slightly haphazard system to locate papers. However, a proper literature search should be so formalised that it is actually **reproducible**. In other words, if another scientist were to follow the same search strategy that you used, over the same years, same search terms, same databases, same inclusion and exclusion criteria, then they should find the identical set of papers. This sounds totally unrealistic at first, but in practice you are probably familiar with the **Methods** section of a conventional scientific paper, e.g. of a field or laboratory experiment. If the paper is written up correctly, and you follow the described methods for the experiment, you should obtain very similar results. The concept is the same for literature searches, and we will discuss the PRISMA approach to reporting your findings.
 
 ### 3.1.3 Data evaluation (and extraction)
-You need to be able to formally evaluate the findings of the research papers you find. This is the most time-consuming step in the process. Ideally, you should also find a way of extracting information from the papers, and recording this information. At its simplest, a "vote tally" approach can be used, i.e. count up the number of papers that did or did not find a response as a result of the intervention you are investigating. In practice, vote tally approaches are very crude, and more sophisticated methods can be used. If you plan to undertake a formal meta-analysis, then knowing how to extract data, understanding effect sizes, sample sizes etc. is essential.
+You need to be able to formally evaluate the findings of the research papers you find. This is the most time-consuming step in the process. Ideally, you should also find a way of extracting information from the papers, and recording this information. If you plan to undertake a formal meta-analysis, then knowing how to extract data, understanding effect sizes, sample sizes etc. is essential.
 
 ### 3.1.4 Writing and structuring a systematic review
 You will learn about best practice in reporting your systematic review, and also how to communicate your findings to potential policy-makers. "Scientists advise, but ministers decide" is the phrase used in UK Government and Civil Service. Many policy-makers are not trained scientists, and may not have time to read overly long, complex reports, therefore it is essential to be able to communicate concisely, precisely, and with clarity.

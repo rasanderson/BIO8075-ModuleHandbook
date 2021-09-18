@@ -2,7 +2,7 @@
 title: BIO8075 Course Handbook Systematic Review and Meta-analysis in Ecology and
   Conservation
 author: "Roy Sanderson"
-date: "09/11/2020"
+date: "18/09/2021"
 output:
   html_document: default
   word_document: default
@@ -96,7 +96,7 @@ where
 
 Indeed, many people take it one stage further, and we can view it from a **goal-oriented** perspective:
 
-$$\textit{goal}(Y\textit{~}X,data=dataset,...)$$
+$$\text{goal (Y}\sim{~}\text{X, data = dataset, ...)}$$
 
 where
 
@@ -123,7 +123,12 @@ The following diagram provides a broad overview of the structure of the BIO8075 
 
 ![](www/bio8075_overview.png)
 
-The lectures and tutorials, indicated in blue, will be done as "synchronous online" sessions and should be in your timetable. Likewise the practicals, indicated in brown, in which you will be using R/RStudio, will be timetabled Zoom sessions. Note that the above diagram gives a simplified overview of the course, in that there are more than 8 lectures and tutorials, and multiple R practicals. Resources are also being made available online (indicated in green), including interactive web-based apps to help you with the basics of R/RStudio, strengthen your understanding of statistical concepts, and provide advice on how to plan, undertake, and manage the results of literature searches. These will all be posted on Canvas. The documentation for the R/RStudio practicals will be published onto Canvas in advance of the timetabled sessions. You are strongly encouraged to **look through these in advance** to help you get the most out of the timetabled Zoom sessions. When using Zoom, please use the **Desktop Program** not the browser, so that you can share your computer screen properly.
+The lectures and tutorials, indicated in blue, will be done as in-person sessions and should be in your timetable. Likewise the practicals, indicated in brown, in which you will be using R/RStudio, will be timetabled in a computer cluster. Note that the above diagram gives a simplified overview of the course, in that there are slightly different numbers of lectures and tutorials than illustrated. Resources are also being made available online (indicated in green), including **interactive web-based apps** to help you with the basics of R/RStudio, strengthen your understanding of statistical concepts, and provide advice on how to plan, undertake, and manage the results of literature searches. These are all be posted on Canvas. The documentation for the R/RStudio practicals will be published onto Canvas in advance of the timetabled computer-cluster sessions. You are strongly encouraged to **look through these in advance** to help you get the most out of the timetabled computer classes.
+
+**Note**: if for health or personal reasons you wish to work through some of the R/RStudio practicals on your own laptop/MacBook rather than attend in-person computer classes then you are free to do so. Please notify snes.bmsc.support@newcastle.ac.uk and roy.sanderson@newcastle.ac.uk of this so Attendance Monitoring can be modified accordingly.
+
+## Assessments
+There are two assessments for the course. First a "critical appraisal" set by Gavin Stewart. You will be given a selection of short published reviews to select from, and evaluate how effective they have been in summarising the most relevant scientific literature. Second, a meta-analysis exercise, set by Roy Sanderson, in which you will be provided with a variety of datasets from the environmental literature, that you must analyse and interpret. Our aim is that you submit the first exercise at the end of the second week of the course, and the second at the end of the fourth and final week of the course. This will avoid potential clashes with your second block-timetabled course on your degree programme.
 
 # 5. Recommended reading
 Three texts that are particularly good and comprehensive include:

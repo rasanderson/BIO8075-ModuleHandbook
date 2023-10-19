@@ -1,13 +1,13 @@
 ---
-title: "BIO8075 Critical Thinking and Analysis for Evidence-Based Environmental Science"
-author: "Roy Sanderson, Gavin Stewart, Julia Robinson"
+title: "NES8314 Critical Thinking and Analysis for Evidence-Based Environmental Science"
+author: "Roy Sanderson, Gavin Stewart, Julia Robinson, Marie McIntyre"
 date: "`r format(Sys.time(), '%B, %Y')`"
 output:
-  word_document:
+  html_document:
     number_sections: yes
   pdf_document:
     number_sections: yes
-  html_document:
+  word_document:
     number_sections: yes
 ---
 
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This handbook gives you an overview of BIO8075 Critical Thinking and Analysis for Evidence-Based Environmental Science. In particular, it explains the philosophical rationale behind the course, why we believe it is important for those working in ecology, conservation or sustainable agriculture to understand these concepts, and to provide you with insights into the content and structure of the course. First, let us go back in time...
+This handbook gives you an overview of NES8314 Critical Thinking and Analysis for Evidence-Based Environmental Science. In particular, it explains the philosophical rationale behind the course, why we believe it is important for those working in ecology, conservation or sustainable agriculture to understand these concepts, and to provide you with insights into the content and structure of the course. First, let us go back in time...
 
 _It is necessary, while formulating the problems of which in our advance we are to find the solutions, to call into council the views of those of our predecessors who have declared an opinion on the subject, in order that we may profit by whatever is sound in their suggestions and avoid their errors._
 
@@ -34,9 +34,10 @@ Whilst the benefits of systematic reviews and meta-analysis have been well-estab
 * More rigorous requirements by many scientific journals on reporting standards. These vary from making available any code used in the analyses, to free access to the complete datasets used, so that other scientists can repeat the analyses and check the **reproducibility** of the findings.
 * High quality open-source (free) systems to manage bibliographic databases. Thus, in addition to commercial software such as [EndNote](endnote.com), public-domain software such as [Zotero](zotero.org) whilst more limited in functionality, can now serve as a suitable alternative
 * The free software [R](www.r-project.org) has been in existance for about 25 years, but within the last five years has been improved with some excellent free add-on "packages", in particular the [metafor R package](http://www.metafor-project.org/doku.php) which is as powerful, if not more powerful, than many of its commercial rivals.
+* Software to aid researchers in collaborative evaluation of the literature, such as [EPPI Reviewer](https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2914), [Rayyan](https://www.rayyan.ai/) and [DistillerSR](https://www.distillersr.com/products/distillersr-systematic-review-software). These are all commercial packages, often with high annual or monthly fees. In NES8314 we'll introduce you to a new product, [SysRev](https://sysrev.com), which has an open source version plus new AI tools to aid screening of papers. It has most of the features of its commercial rivals.
 
 # Outline of this course
-BIO8075 is split into two main parts, first on systematic reviews, and second statistical modelling / meta-analysis. No prior experience of either is assumed. Whilst most students have done **narrative reviews** as part of their undergraduate degrees, the distinct differences from formal systematic reviews, and the requirements of the latter, and rarely covered. Similarly, most students from a science background (less so from humanities) will have covered basics of statistical analysis as undergraduates. However, experience has shown us that whilst some students may have heard of terms such as 'variance', 'standard error', 'p-values' etc., their actual understanding of these concepts is often tenuous. We therefore provide a refresher on basic statistics, before moving on to meta-analysis.
+NES8314 is split into two main parts, first on systematic reviews, and second statistical modelling / meta-analysis. No prior experience of either is assumed. Whilst most students have done **narrative reviews** as part of their undergraduate degrees, the distinct differences from formal systematic reviews, and the requirements of the latter, and rarely covered. Similarly, most students from a science background (less so from humanities) will have covered basics of statistical analysis as undergraduates. However, experience has shown us that whilst some students may have heard of terms such as 'variance', 'standard error', 'p-values' etc., their actual understanding of these concepts is often tenuous. We therefore provide a refresher on basic statistics, before moving on to meta-analysis.
 
 ## Systematic Reviews
 ### Question formulation
@@ -122,9 +123,9 @@ Conventional data analysis in the form of linear models and generalised linear m
 Several routes are available for meta-analysis, and we will focus on the [metafor R package](http://www.metafor-project.org/doku.php) which is freely available and has good document. Key concepts to understand include fixed- and random-effects meta-analysis, and meta-regression to handle continuous interventions. Meta-analysis also allows you to detect "publication bias". For example, it is often suspected that studies that demonstrate "statistical significance" as a result of an intervention are more likely to be published than those that do not. This might be because scientists are less likely to submit papers with non-significant results, the so-called "bottom drawer" effect, and/or because of biases in the journal review system, wanting to promote exciting new findings. Failure to publish non-significant results is most likely to occur in small studies, and meta-analysis provides methods to visualise these problems succinctly.
 
 # Visual overview of the course
-The following diagram provides a broad overview of the structure of the BIO8075 course:
+The following diagram provides a broad overview of the structure of the NES8314 course:
 
-![](www/bio8075_overview.png)
+![](www/NES8314_overview.png)
 
 The lectures and tutorials, indicated in blue, will be done as in-person sessions and should be in your timetable. Likewise the practicals, indicated in brown, in which you will be using R/RStudio, will be timetabled in a computer cluster. Note that the above diagram gives a simplified overview of the course, in that there are slightly different numbers of lectures and tutorials than illustrated. **More computer classes than expected have been timetabled** especially in the final week of the course: it is possible we will **not** need all these sessions, but the course leader (Roy Sanderson) will keep you updated. Resources are also being made available online (indicated in green), including **interactive web-based apps** to help you with the basics of R/RStudio, strengthen your understanding of statistical concepts, and provide advice on how to plan, undertake, and manage the results of literature searches. These are all be posted on Canvas. The documentation for the R/RStudio practicals will be published onto Canvas in advance of the timetabled computer-cluster sessions. You are strongly encouraged to **look through these in advance** to help you get the most out of the timetabled computer classes.
 
